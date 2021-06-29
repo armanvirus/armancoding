@@ -1,6 +1,6 @@
 const Users = require("../models/User");
 const Contact = require('../models/contact');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 
 
