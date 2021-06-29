@@ -1,0 +1,127 @@
+<style>
+    .checkbox{
+        width: 480px;
+        margin-top:15px;
+    }
+    .checkbox span{
+        padding: 0 2px;
+        color: #ff4321;
+        font-weight:600;
+    }
+    @media(max-width:768px){
+        .checkbox{
+            width:250px;
+            margin-top:5px;
+            font-size: 10px;
+        }
+        button{
+            margin-top:8px;
+        }
+    }
+    </style>
+
+
+    <nav>
+
+                    <img src="/public/GG.png" class="logo">
+
+                   <div class="links">
+                      
+                    <ul>
+         
+                        <li><a href="/public/port.html">HOME</a></li>
+        
+                        <li><a class="current" href="#">REGISTER</a></li>
+        
+                        <li><a href="/login">LOG IN</a></li>
+        
+                        <li><a href="/public/about.html">ABOUT</a></li>
+        
+                        <li><a href="/public/contact.html">CONTACT</a></li>
+        
+                    </ul>
+                   </div>
+        
+                   <div class="hidden">
+                      
+                    <ul>
+                        
+        
+                        <li><a href="/public/port.html">HOME</a></li>
+        
+                        <li><a class="current" href="#">REGISTER</a></li>
+        
+                        <li><a href="/login">LOG IN</a></li>
+        
+                        <li><a href="/public/about.html">ABOUT</a></li>
+        
+                        <li><a href="/public/contact.html">CONTACT</a></li>
+        
+                    </ul>
+                   </div>
+        
+                   <div class="lines">
+                    <div class="bars-container">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                </div>
+                </div>      
+                </nav>
+            <main>
+                <form class="form" action="/user/register" method="POST">
+                        <div class="l-border"></div>
+                    <section class="imagep">
+                        <img src="/public/gsss copy.jpg" alt="profile pcture">
+                    </section>
+                    <section class="fields">
+                        <div class="err">
+                            <ul>
+                                <li class="err">{{#each errors}} {{this.msg}} {{/each}}</li>
+                            </ul>
+                        </div>
+                        <!-- the first two fields -->
+                        <div class="holder">
+                            <div class="single">
+                                <div class="ib"></div>
+                                <input id="a" {{#if fname}} value={{fname}} {{/if}} name="fname" value="" type="text" placeholder="First Name">
+                        </div>
+                        <div class="single"><div class="ib"></div>
+                        <input id="b" {{#if lname}} value={{lname}} {{/if}} value="" name="lname" type="text" placeholder="Last Name">
+                        </div>
+                        </div>
+                        <!-- the second 2 fields -->
+                        <div class="holder">
+                                <div class="single"><div class="ib"></div>
+                            <input id="c" {{#if phone}} value={{phone}} {{/if}} value="" name="phone" type="tel" placeholder="Phone Number">
+                            </div>
+                            <div class="single"><div class="ib"></div>
+                            <input id="d" {{#if email}} value={{email}} {{/if}} value="" name="email" type="text" placeholder="Email address">
+                            </div>
+                            </div>
+                            <!-- the 3rd 2 fields -->
+                            <div class="holder">
+                                    <div class="single"><div class="ib"></div>
+                                <input id="e" {{#if password}} value={{password}} {{/if}} value="" name="password" type="password" placeholder="password">
+                                </div>
+                                <div class="single"><div class="ib"></div>
+                                <input {{#if password2}} value={{password2}} {{/if}} value="" name="password2" id="f" type="password" placeholder="Confirm password">
+                                </div>
+                                </div>
+                                <!-- the address -->
+                                <div class="holder">
+                                    </div>
+                                    <div class="singlef">
+                                    <div class="ib"></div>
+                                    <input {{#if address}} value={{address}} {{/if}} value="" id="g" name="address" type="text" placeholder="Residential address">
+                                    </div>
+                                    <div class="checkbox">
+                                            <input  type="checkbox" >&nbsp; I agree to your <span> terms </span> and <span> policy </span>
+                                            </div>
+                                    </div>
+
+                                    <button type="submit">Register</button>
+                                    
+                    </section>
+                </form>
+            </main>

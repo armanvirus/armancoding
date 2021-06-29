@@ -1,0 +1,135 @@
+<style>
+        .imagep img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 33,  9, 0.4);
+        }
+        button{
+            width: 250px;
+
+        }
+        .sub{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width:250px;
+            margin: 5px 0 2px 3px;
+        }
+        .sub p {
+            padding: 2px 2px 2px 5px;
+        }
+        .sub p a{
+            text-decoration: none;
+            font-weight: 400;
+            word-spacing: 1.5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-size: 14px;
+            color:#111;
+        }
+        .sub p a:hover{
+            color: #ff4321;
+            transition: color .5s;
+        }
+        </style>
+
+
+<nav>
+
+                <img src="/public/GG.png" class="logo">
+
+               <div class="links">
+                  
+                <ul>
+     
+                    <li><a href="/public/port.html">HOME</a></li>
+    
+                    <li><a href="/register">REGISTER</a></li>
+    
+                    <li><a class="current" href="#">LOG IN</a></li>
+    
+                    <li><a href="/public/about.html">ABOUT</a></li>
+    
+                    <li><a href="/public/contact.html">CONTACT</a></li>
+    
+                </ul>
+               </div>
+    
+               <div class="hidden">
+                  
+                <ul>
+                    
+    
+                    <li><a href="/public/port.html">HOME</a></li>
+    
+                    <li><a href="/register">REGISTER</a></li>
+    
+                    <li><a class="current" href="#">LOG IN</a></li>
+    
+                    <li><a href="/public/about.html">ABOUT</a></li>
+    
+                    <li><a href="/public/contact.html">CONTACT</a></li>
+    
+                </ul>
+               </div>
+    
+               <div class="lines">
+                <div class="bars-container">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+            </div>      
+            </nav>
+   
+            <main>
+                    <form class="form log" action="/user/login" method="POST">
+                            <div class="l-border"></div>
+                        
+                        <section class="fields">
+{{#if error}}
+      <div>
+       {{this.error}}
+    </div>
+{{/if}}
+
+{{#if success_msg}}
+<div>
+        {{this.success_msg}}
+
+    </div>
+
+{{/if}}
+                                <section class="imagep">
+                                        <img src="/public/images/name.png" alt="profile">
+                                    </section>
+                            <!-- the second 2 fields -->
+                            <div class="holder">
+                                <div class="single"><div class="ib"></div>
+                                <input id="d" name="email" type="email" placeholder="Email address">
+                                </div>
+                                </div>
+                                <!-- the 3rd 2 fields -->
+                                <div class="holder">
+                                        <div class="single"><div class="ib"></div>
+                                    <input id="e" name="password" type="password" placeholder="password">
+                                    </div>
+                                    </div>
+                                    <!-- the address -->
+                                    <div class="checkbox">
+                                        <input  type="checkbox" > Keep me loged in
+                                        </div>
+                                        </div>
+                                   
+    
+                                        <button type="submit">Login</button>
+
+                                        <div class="sub">
+                                            <p><a href="">forgot password</a></p>
+                                            <p><a href="/register">you don't have an account?</a></p>
+                                        </div>
+                                        
+                        </section>
+                    </form>
+                </main>

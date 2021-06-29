@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arman Coding bootcamp</title>
+    <link href="./port.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./IMAGE READER/fontawesome-free-5.15.2-web/css/all.min.css">
+
+
+    <STYle>
+            textarea{
+            height: 150px;
+            width: 230px;
+            padding: 5px 5px 5px 10px;
+    margin: 10px;
+    border: none;
+    border-bottom:dotted 1px rgba(255, 67, 33, 0.5);
+    box-shadow: 0 0 5px rgba(255, 67, 33, 0.2);
+        }
+        .b-s{
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+
+        }
+h4{
+    display: flex;
+    align-items: flex-start;
+}
+@media(max-width:768px){
+    button{
+        margin-bottom:5px;
+    }
+}
+    </STYle>
+
+</head>
+<body>
+<section>
+    <div class="complete">
+        <div class="left-profile">
+            <div class="inner-left-profile">
+                <ul>
+                    <li><i class="fa fa-user"></i> User</li>
+                    <li> <i class="fa fa-book"></i> Couses</li>
+                    <li> <i class="fa fa-file"></i> Projects</li>
+                    <li> <i class="fa fa-trophy"></i> Challenges</li>
+                    <li> <i class="fa fa-certificate"></i> Certificates</li>
+                    <li> <i class="fa fa-globe"></i> Up Comming Events</li>
+                    <li>  <i class="fa fa-globe"></i> Currnt Events</li>
+                    <li> <i class="fas fa-sign-out-alt"></i> Logout</li>
+                </ul>
+            </div>
+        </div>
+        <!-- the middle profile contents -->
+        <div class="middle-profile">
+            <div class="top-color"></div>
+            <!-- user information -->
+                    <div class="inner-middle-profile">
+                <div class="upper-middle">
+                    <div class="user-profile"><img src="./images/name.png" alt=""></div>
+                    <div class="e-n">
+                            <div class="status"></div>
+                            <!-- <div class="profile-email">armanviruse@gmail.com</div> -->
+                            <div class="profile-name">Abdurrahman Grema</div>
+                    </div>
+                </div>
+                <!-- suggestions and progress -->
+                <div class="suggestions">
+                    <div class="loader"></div>
+                    <div class="condition"> Please Wait...</div>
+                </div>
+            </div>
+        </div>
+        <!-- the right contents -->
+        <div class="right-profile">
+            <div class="ask">
+                    <form class="ask-form" action="/contact" method="POST">
+                    <section class="fields">
+                        <div class="holder">
+                            
+                            <div class="single"><div class="ib"></div>
+                            <input name="title" id="a" type="text" placeholder="Title">
+                            </div>
+                            </div>
+                                <!-- the text area -->
+                                <textarea name="message" id="question"> Type in your message here...</textarea>
+                               
+
+                                    <button class="b-s" type="submit">Send <img src="./images/download-1.webp" height="25px" 
+                                        width="25px" style="border-radius:50%; margin:0;" alt=""></button>
+                                    
+                    </section>
+            </div>
+            <div class="questins">
+                <div class="question">
+                    <div class="q-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quis quae fugit quibusdam unde vel excepturi enim nihil exercitationem 
+                        omnis architecto.
+                    </div>
+                    <div class="responds">
+                        <div class="comment">
+                            <input type="text" placeholder="Have to Say?">
+                        </div>
+                            <div class="like">
+                                <button><i class="fa fa-thumb"></i></button>
+                                <button><i class="fa fa-like"></i></button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+</body>
+</html>
