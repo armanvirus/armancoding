@@ -65,7 +65,6 @@ app.get('/login',forwardAuthenticated, (req,res) =>{
     res.render('login');
 });
 app.get('/user/profile',ensureAuthenticated, (req,res) =>{
-      console.log(req.user);
     res.render('profile', {user: req.user});
 })
 app.post('/user/register', posts.register);
