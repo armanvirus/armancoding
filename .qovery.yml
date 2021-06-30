@@ -1,0 +1,15 @@
+---
+application:
+  name: "armancoding"
+  project: "armancoding"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "armancoding"
+  version: "4.4"
+routers:
+- name: "main-armancoding"
+  routes:
+  - application_name: "armancoding"
+    paths:
+    - "/*"
