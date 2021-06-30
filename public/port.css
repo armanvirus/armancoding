@@ -65,7 +65,20 @@ nav{
     bottom: 5%;
     margin-right: 30px;
 }
-
+.lq{
+    border: solid 1px rgba(0,0,0,0.7);
+    background: rgba(230, 230, 230, .97);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    align-content: center;
+    align-self: center;
+    display: none;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    margin-right: 30px;
+}
 
 .bars-container{
     margin-top: 12px;
@@ -110,13 +123,16 @@ nav ul li a:hover{
 
 
 .b1,.b2,.b3{
-    height: 3px;
+    height: 2px;
     width: 33px;
     background: #fff;
     margin: 5px;
     border-radius: 2px;
 
     
+}
+.lq .bars-container .b1,.b2,.b3{
+    background: rgba(0,0,0,0.6);
 }
 
 .hidden , .mobile{
@@ -542,6 +558,11 @@ flex-direction: column;
        z-index:1002;
        right: 0px;
    }
+   .lq{
+    display: block;
+    z-index:1002;
+    right: 0px;
+}
    .lines:hover{
        transform: scale(1.2);
    }
@@ -618,7 +639,7 @@ nav{
     background: rgba(230, 230, 230, .97);
     border-right: solid 1px rgba(0,0,0,0.4);
 }
-.left-profile{
+.left-profile-none{
     display: none;   
 }
 .middle-profile{

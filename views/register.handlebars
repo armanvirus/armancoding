@@ -75,12 +75,14 @@
                         <img src="/public/gsss copy.jpg" alt="profile pcture">
                     </section>
                     <section class="fields">
-                        <div class="err">
-                            <ul>
-                                <li class="err">{{#each errors}} {{this.msg}} {{/each}}</li>
-                            </ul>
-                        </div>
-                        <!-- the first two fields -->
+                
+                          {{#if errors}}
+                               <div class="errors"> {{#each errors}}
+                                  <div class="err"><span> {{this.msg}}</span> <span class="cancel">x</span> </div>
+                                   {{/each}}
+                                   </div>
+                            {{/if}}
+                                        <!-- the first two fields -->
                         <div class="holder">
                             <div class="single">
                                 <div class="ib"></div>

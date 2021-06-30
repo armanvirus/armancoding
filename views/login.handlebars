@@ -88,15 +88,16 @@
                             <div class="l-border"></div>
                         
                         <section class="fields">
-{{#if error}}
-      <div>
-       {{this.error}}
-    </div>
-{{/if}}
+                        {{#if error}}
+                               
+                                  <div class="err"><span> {{this.error}}</span> <span class="cancel">x</span> </div>
+                                   
+                                   </div>
+                            {{/if}}
 
 {{#if success_msg}}
-<div>
-        {{this.success_msg}}
+<div class="success">
+       <span> {{this.success_msg}} </span> <span class="cancel">X</span>
 
     </div>
 

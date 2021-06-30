@@ -7,10 +7,10 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 const posts = require('./controllers/posts');
-// const uri = "mongodb://localhost:27017/aUser";
+const uri = "mongodb://localhost:27017/aUser";
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 const handlebars = require('handlebars'); 
-const uri = 'mongodb+srv://armancoding:<password>@armancoding.8vljh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+// const uri = 'mongodb+srv://armancoding:<password>@armancoding.8vljh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(uri, {
     useUnifiedTopology: true,
     useNewUrlParser: true

@@ -9,8 +9,8 @@ vavs.addEventListener("click", ()=>{
        links.className = "mobile";
    }else{
        links.className ="hidden"
-   }
-    console.log(links.className)
+   }    
 })
+
 
 /* registration functionality*/

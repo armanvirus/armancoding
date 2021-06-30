@@ -29,8 +29,15 @@ h4{
 
 
 <section>
+    <div class="lq">
+            <div class="bars-container">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+        </div>
+        </div>
     <div class="complete">
-        <div class="left-profile">
+        <div class="left-profile-none">
             <div class="inner-left-profile">
                 <ul>
                     <li><i class="fa fa-user"></i> User</li>
@@ -105,3 +112,17 @@ h4{
         </div>
     </div>
 </section> 
+
+<script>
+    var vavs1 = document.querySelector(".lq");
+    var switcher = false;
+var links1 = document.querySelector(".left-profile-none");
+vavs1.addEventListener("click", ()=>{
+    switcher = !switcher ;
+   if(switcher){
+       links1.className = "left-profile";
+   }else{
+       links1.className = "left-profile-none";
+   }    
+})
+</script>
