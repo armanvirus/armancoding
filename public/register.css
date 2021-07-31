@@ -75,6 +75,7 @@ width:70%;
     box-shadow: 0 0 3px rgba(204,0,0,0.7);
     margin: 2px 0;
     padding: 3px 10px;
+    font-family: ar destine;
 }
 .success{
     display: flex;
@@ -86,11 +87,13 @@ width:70%;
     box-shadow: 0 0 3px rgba(0,204,0,0.7);
     margin: 2px 0;
     padding: 3px 10px;
+    font-family: ar destine;
 }
 .cancel{
     color: rgba(209,0,0,0.7);
     padding: 0 3px;
     cursor: pointer;
+    font-family: ar destine;
 }
 .fields{
     display:flex;
@@ -120,6 +123,7 @@ width:70%;
     border: none;
     border-bottom:dotted 1px rgba(255, 67, 33, 0.5);
     box-shadow: 0 0 5px rgba(255, 67, 33, 0.2);
+    font-family: verdana;
 }
 .single input:focus,.singlef input:focus{
     border: none;
@@ -130,7 +134,7 @@ width:70%;
     color: #111;
     font-weight: 400;
     letter-spacing: 1.5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: ar destine;
     font-style: oblique;
     font-size: 14px;
     padding-left:2px;
@@ -169,6 +173,7 @@ button{
     font-weight: 700;
     background: #ff4321;
     box-shadow: 0 0 5px rgba(255, 33 ,9, 0.2);
+    font-family: agency fb;
 }
 button:hover{
     background: #fff;
@@ -225,6 +230,7 @@ button:hover{
     font-weight: 400;
     font-style: oblique;
     font-size: 14px;
+    font-family: ar destine;
 }
 .checkbox input{
     border: solid 2px #ff4321;
